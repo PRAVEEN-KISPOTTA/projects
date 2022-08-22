@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @PRAVEEN-KISPOTTA
-- 👀 I’m interested in Mobile App development, how this application work and wish to learn how to make a proper App.
-- 🌱 I’m currently learning JAVA in Mobile App development.
+- 👀 I’m interested in Web development, how this application work and wish to learn how to make a proper websites.
+- 🌱 I’m currently learning Full Stack Web Developer.
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
