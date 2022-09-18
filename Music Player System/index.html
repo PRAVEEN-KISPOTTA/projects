@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Player</title>
+	<script src="https://kit.fontawesome.com/9a91bf7896.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="shortcut icon" type="image/jpg" href="G:\sublime\Major Project 1\asset\logo.png">
+</head>
+<body>
+	<!-------------------------------------------------HEADER SECTION---------------------------------------------------->
+	<header>
+		<nav>
+			<ul>
+				<li class="music-player-icon-tag"><img src="G:\sublime\Major Project 1\asset\logo.png"></li>
+				<li class="name-tag header-text-color">Music<h5>Player</h5></li>
+				<li class="search-tag">
+					<input type="text" name="Search" placeholder="Search songs, artists &amp; podcasts you love!"></li>
+				 <li class="home header-style"><a href="#" class="more">Home</a></li>
+				 <li class="podcast header-style"><a href="#" class="more">Podcast</a></li>
+				<li class="bell-icon-tag"><i class="fa-solid fa-bell"></i></li>
+				<li class="notification">.</li>
+				<li class="profile-tag"><img src="G:\sublime\Major Project 1\asset\profile.jpg"></li>
+			</ul>
+		</nav>
+	</header>
+    <!-------------------------------------------------MAIN SECTION---------------------------------------------------->
+	<main>
+
+		<!-------------------------------------------------SLIDER IMAGE SECTION---------------------------------------------------->
+		<section class="front-image">
+			<div class="container">
+				<div id="slider">
+					<figure>
+				  <img src="G:\sublime\Major Project 1\asset\left-upper-image.jpg">
+				  <img src="G:\sublime\Major Project 1\asset\front-upper-image.jpg">
+				  <img src="G:\sublime\Major Project 1\asset\img-3.jpg">
+				  <img src="G:\sublime\Major Project 1\asset\right-upper-image.jpg">
+				</figure>
+			    </div>
+			</div>
+
+		    <div class="previous-next-button">
+			    <span class="previous-button"><i class="fa-solid fa-circle-chevron-right fa-3x"></i></span>
+			    <span class="next-button"><i class="fa-solid fa-circle-chevron-right fa-3x"></i></span>
+			</div>
+		</section>
+
+		<!-------------------------------------------------RECENT PLAYED SECTION---------------------------------------------------->
+
+		<section class="recent-played-song">
+			<div class="recent-played">
+				<h2 class="recent-played-heading">Recently Played<a href="#" class="more">More</a></h2>
+
+				<div class="recent-played-song-container">
+					<div class="image-container">
+                      <img src="G:\sublime\Major Project 1\asset\recent-1.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="icon" title="User Profile">
+                            <i class="fa-solid fa-circle-play"></i>
+                          </a>
+
+                          <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                          <a href="#"><span class="circle"><i class="fa-solid fa-share fa-share-button"></i></span></a>
+
+                        </div>
+                    </div>
+
+                    <div class="image-container image-2">
+                      <img src="G:\sublime\Major Project 1\asset\recent-2.jpg" alt="Avatar" class="image image-2">
+                        <div class="overlay">
+                          <a href="#key-note2" class="icon" title="User Profile">
+                            <i class="fa-solid fa-circle-play"></i>
+                          </a>
+
+                          <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                          <a href="#"><i class="fa-solid fa-share fa-share-button"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="image-container">
+                      <img src="G:\sublime\Major Project 1\asset\recent-3.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <a href="#key-note3" class="icon" title="User Profile">
+                            <i class="fa-solid fa-circle-play"></i>
+                          </a>
+
+                          <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                          <a href="#"><i class="fa-solid fa-share fa-share-button"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="recent-played-song-container recent-played-song-container-2">
+
+                    <div class="image-container">
+                      <img src="G:\sublime\Major Project 1\asset\recent-4.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <a href="#key-note4" class="icon" title="User Profile">
+                            <i class="fa-solid fa-circle-play"></i>
+                          </a>
+
+                          <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                          <a href="#"><i class="fa-solid fa-share fa-share-button"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="image-container">
+                      <img src="G:\sublime\Major Project 1\asset\recent-5.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <a href="#key-note5" class="icon" title="User Profile">
+                            <i class="fa-solid fa-circle-play"></i>
+                          </a>
+
+                          <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+                          <a href="#"><i class="fa-solid fa-share fa-share-button"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="image-container">
+                      <img src="G:\sublime\Major Project 1\asset\recent-6.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <a href="#key-note6" class="icon" title="User Profile">
+                            <i class="fa-solid fa-circle-play"></i>
+                          </a>
+
+                          <a href="#check-box2"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+
+                          <a href="#"><i class="fa-solid fa-share fa-share-button"></i></a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</section>
+
+		<!-------------------------------------------------3D CUBE SECTION---------------------------------------------------->
+
+		<section class="Cube">
+			<div class="cube-container">
+		       <div class="cube">
+			   <div class="side front">&#128517;</div>
+			   <div class="side back">&#128516;</div>
+			   <div class="side top">&#128515;</div>
+			   <div class="side bottom">&#128514;</div>
+			   <div class="side left">&#128513;</div>
+			   <div class="side right">&#128512;</div>
+		       </div>
+		    </div>
+		</section>
+
+		<!-------------------------------------------------QUEUE SECTION---------------------------------------------------->
+
+		<section class="queue">
+			<div class="queue-container">
+				<h2 class="queue-heading">Queue<a href="#" class="more">More</a></h2>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>1. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>2. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>3. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>4. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>5. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>6. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>7. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>8. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>9. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>10. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<div class="queue1-container">
+					<div class="queue1"><b>11. </b>&emsp;<img src="G:\sublime\Major Project 1\asset\recent-6.jpg"><p class="title">Alan-Walker</p><p class="duration">03:23</p>
+						<input type="checkbox" id="checkb">
+	                    <p class="to-be"><i class="fa-regular fa-heart"></i></p>
+	                    <p class="to-be-changed"><i class="fa-solid fa-heart"></i></p>
+					</div>
+				</div>
+
+				<!-------------------------------------------------MOOD TYPE MUSIC SECTION---------------------------------------------------->
+
+			</div>
+		</section>
+		<section class="mood-type-music">
+			<div class="mood-type-music-container">
+				<a href="#" class="mood-type-music-image"><img src="G:\sublime\Major Project 1\asset\party-image.jpg"></a>
+
+				<a href="#" class="mood-type-music-image"><img src="G:\sublime\Major Project 1\asset\electronic-image.png"></a>
+
+				<a href="#" class="mood-type-music-image"><img src="G:\sublime\Major Project 1\asset\road-trip-image.jpg"></a>
+
+				<h3 class="party">Party</h3>
+				<h3 class="electronic">Electronic</h3>
+				<h3 class="road-trip">Road Trip</h3>
+			</div>
+		</section>
+		<section class="music-status-container">
+
+			<!-----------------------------------------------Key Note 1------------------------------------------>
+
+		     <div id="key-note1">
+		     	<span class="music-status-nobe">
+		     		<div class="percentage-of-complition"></div>
+		     	</span>
+		     	<span class="music-status"><img src="G:\sublime\Major Project 1\asset\recent-1.jpg">
+		     		<span class="music-title">Kesariya (From "Brahmastra")</span>
+		     	</span>
+		     	<span class="sub-title">Arijit Singh - Kesariya (From "Brahmastra")<span class="music-shuffle"><i class="fa-solid fa-shuffle"></i></span>
+
+		     	<span class="music-next-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-previous-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-play-button"><i class="fa-solid fa-circle-pause fa-3x"></i></span>
+
+		     	<span class="music-repeat-button"><i class="fa-solid fa-repeat"></i></span>
+
+		     	<span class="music-duration">01:23 / 04:28</span>
+
+		     	<span class="music-volume"><i class="fa-solid fa-volume-high"></i></span>
+
+		     	<span class="music-queue"><i class="fa-solid fa-sliders"></i></span>
+		     </span>
+
+		     </div>
+
+		     <!-----------------------------------------------Key Note 2------------------------------------------>
+
+		     <div id="key-note2">
+		     	<span class="music-status-nobe">
+		     		<div class="percentage-of-complition"></div>
+		     	</span>
+		     	<span class="music-status"><img src="G:\sublime\Major Project 1\asset\recent-2.jpg">
+		     		<span class="music-title">Dandelions</span>
+		     	</span>
+		     	<span class="sub-title">Routh B - Dandelions &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="music-shuffle"><i class="fa-solid fa-shuffle"></i></span>
+
+		     	<span class="music-next-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-previous-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-play-button"><i class="fa-solid fa-circle-pause fa-3x"></i></span>
+
+		     	<span class="music-repeat-button"><i class="fa-solid fa-repeat"></i></span>
+
+		     	<span class="music-duration">01:23 / 04:28</span>
+
+		     	<span class="music-volume"><i class="fa-solid fa-volume-high"></i></span>
+
+		     	<span class="music-queue"><i class="fa-solid fa-sliders"></i></span>
+		     </span>
+		     	
+		     </div>
+
+		     <!-----------------------------------------------Key Note 3------------------------------------------>
+
+		     <div id="key-note3">
+		     	<span class="music-status-nobe">
+		     		<div class="percentage-of-complition"></div>
+		     	</span>
+		     	<span class="music-status"><img src="G:\sublime\Major Project 1\asset\recent-3.jpg">
+		     		<span class="music-title">Stay</span>
+		     	</span>
+		     	<span class="sub-title">Justin Bieber - Stay &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<span class="music-shuffle"><i class="fa-solid fa-shuffle"></i></span>
+
+		     	<span class="music-next-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-previous-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-play-button"><i class="fa-solid fa-circle-pause fa-3x"></i></span>
+
+		     	<span class="music-repeat-button"><i class="fa-solid fa-repeat"></i></span>
+
+		     	<span class="music-duration">01:23 / 04:28</span>
+
+		     	<span class="music-volume"><i class="fa-solid fa-volume-high"></i></span>
+
+		     	<span class="music-queue"><i class="fa-solid fa-sliders"></i></span>
+		     </span>
+		     	
+		     </div>
+
+		     <!-----------------------------------------------Key Note 4------------------------------------------>
+
+		     <div id="key-note4">
+		     	<span class="music-status-nobe">
+		     		<div class="percentage-of-complition"></div>
+		     	</span>
+		     	<span class="music-status"><img src="G:\sublime\Major Project 1\asset\recent-4.jpg">
+		     		<span class="music-title">All She Wanna Do</span>
+		     	</span>
+		     	<span class="sub-title">John Legend - All She Wanna Do &emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;<span class="music-shuffle"><i class="fa-solid fa-shuffle"></i></span>
+
+		     	<span class="music-next-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-previous-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-play-button"><i class="fa-solid fa-circle-pause fa-3x"></i></span>
+
+		     	<span class="music-repeat-button"><i class="fa-solid fa-repeat"></i></span>
+
+		     	<span class="music-duration">01:23 / 04:28</span>
+
+		     	<span class="music-volume"><i class="fa-solid fa-volume-high"></i></span>
+
+		     	<span class="music-queue"><i class="fa-solid fa-sliders"></i></span>
+		     </span>
+		     	
+		     </div>
+
+		     <!-----------------------------------------------Key Note 5------------------------------------------>
+
+		     <div id="key-note5">
+		     	<span class="music-status-nobe">
+		     		<div class="percentage-of-complition"></div>
+		     	</span>
+		     	<span class="music-status"><img src="G:\sublime\Major Project 1\asset\recent-5.jpg">
+		     		<span class="music-title">Night Changes</span>
+		     	</span>
+		     	<span class="sub-title">One Direction - FOUR &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<span class="music-shuffle"><i class="fa-solid fa-shuffle"></i></span>
+
+		     	<span class="music-next-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-previous-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-play-button"><i class="fa-solid fa-circle-pause fa-3x"></i></span>
+
+		     	<span class="music-repeat-button"><i class="fa-solid fa-repeat"></i></span>
+
+		     	<span class="music-duration">01:23 / 04:28</span>
+
+		     	<span class="music-volume"><i class="fa-solid fa-volume-high"></i></span>
+
+		     	<span class="music-queue"><i class="fa-solid fa-sliders"></i></span>
+		     </span>
+		     	
+		     </div>
+
+		     <!-----------------------------------------------Key Note 6------------------------------------------>
+
+		     <div id="key-note6">
+		     	<span class="music-status-nobe">
+		     		<div class="percentage-of-complition"></div>
+		     	</span>
+		     	<span class="music-status"><img src="G:\sublime\Major Project 1\asset\recent-6.jpg">
+		     		<span class="music-title">On My Way</span>
+		     	</span>
+		     	<span class="sub-title">Alan Walker - On My Way &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&nbsp;<span class="music-shuffle"><i class="fa-solid fa-shuffle"></i></span>
+
+		     	<span class="music-next-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-previous-button"><i class="fa-solid fa-forward-step"></i></span>
+
+		     	<span class="music-play-button"><i class="fa-solid fa-circle-pause fa-3x"></i></span>
+
+		     	<span class="music-repeat-button"><i class="fa-solid fa-repeat"></i></span>
+
+		     	<span class="music-duration">01:23 / 04:28</span>
+
+		     	<span class="music-volume"><i class="fa-solid fa-volume-high"></i></span>
+
+		     	<span class="music-queue"><i class="fa-solid fa-sliders"></i></span>
+		     </span>
+		     	
+		     </div>
+		</section>
+
+		<!-------------------------------------------------NEW RELEASE SECTION---------------------------------------------------->
+
+
+		<section class="new-release">
+			
+			<div class="new-release-song">
+		     	<h2 class="new-release-song-heading">New Release<span class="more-button"><a href="#">More</a></span></h2>
+
+		     	<div class="album-recent-played-song-container">
+					<div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\album1.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\album2.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\album3.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\album4.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\album5.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\album6.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\album7.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\album8.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="name-list">
+                	<div class="album-container"><p class="album1-title">Faded</p><p class="album1-sub-title">Alan walker - Faded</p></div>
+                	<div class="album-container"><p class="album2-title">Alone, Pt.II</p><p class="album2-sub-title">Alan walker - Alone</p></div>
+                	<div class="album-container"><p class="album3-title">The Drum</p><p class="album3-sub-title">Alan walker - Drum</p></div>
+                	<div class="album-container"><p class="album4-title">Lily</p><p class="album4-sub-title">Alan walker - Lily</p></div>
+                	<div class="album-container"><p class="album5-title">Darkside</p><p class="album5-sub-title">Alan walker - Dark</p></div>
+                	<div class="album-container"><p class="album6-title">Ignite</p><p class="album6-sub-title">Alan walker - Ignite</p></div>
+                	<div class="album-container"><p class="album7-title">Alone</p><p class="album7-sub-title">Alan walker - Alone</p></div>
+                	<div class="album-container"><p class="album8-title">Moon</p><p class="album8-sub-title">Alan walker - Moon</p></div>
+                
+                </div>
+		</section>
+
+		<!------------------------------------------------------POPULAR ARTIST SECTION----------------------------------------------------------->
+		<section class="popular-artist">
+			
+			<div class="new-release-song">
+		     	<h2 class="new-release-song-heading">Popular Artist<span class="popular-artist-more-button"><a href="#">More</a></span></h2>
+
+		     	<div class="artist-container">
+					<div class="artist-image-container">
+                      <a href="G:\sublime\Major Project 1\format.html" target="_blank"><img src="G:\sublime\Major Project 1\asset\artist1.jpeg" alt="Avatar" class="album-image"></a>
+                    </div>
+
+                    <div class="artist-image-container">
+                      <a href="G:\sublime\Major Project 1\format.html" target="_blank"><img src="G:\sublime\Major Project 1\asset\artist2.jpeg" alt="Avatar" class="album-image"></a>
+                    </div>
+
+                    <div class="artist-image-container">
+                      <a href="G:\sublime\Major Project 1\format.html" target="_blank"><img src="G:\sublime\Major Project 1\asset\artist3.jpeg" alt="Avatar" class="album-image"></a>
+                    </div>
+
+                    <div class="artist-image-container">
+                      <a href="G:\sublime\Major Project 1\format.html" target="_blank"><img src="G:\sublime\Major Project 1\asset\artist4.jpeg" alt="Avatar" class="album-image"></a>
+                    </div>
+
+                    <div class="artist-image-container">
+                      <a href="G:\sublime\Major Project 1\format.html" target="_blank"><img src="G:\sublime\Major Project 1\asset\artist5.jpeg" alt="Avatar" class="album-image"></a>
+                    </div>
+
+                    <div class="artist-image-container">
+                      <a href="G:\sublime\Major Project 1\format.html" target="_blank"><img src="G:\sublime\Major Project 1\asset\artist6.jpeg" alt="Avatar" class="album-image"></a>
+                    </div>
+
+                    <div class="artist-image-container">
+                      <a href="G:\sublime\Major Project 1\format.html" target="_blank"><img src="G:\sublime\Major Project 1\asset\artist7.jpeg" alt="Avatar" class="album-image"></a>
+                    </div>
+
+                    <div class="artist-image-container">
+                      <a href="G:\sublime\Major Project 1\format.html" target="_blank"><img src="G:\sublime\Major Project 1\asset\artist8.jpeg" alt="Avatar" class="album-image"></a>
+                    </div>
+                </div>
+            </div>
+		</section>
+
+		<!-------------------------------------------------POPULAR ALBUM SECTION---------------------------------------------------->
+
+		<section class="popular-album">
+			
+			<div class="new-release-song">
+		     	<h2 class="new-release-song-heading">Popular Album<span class="popular-album-more-button"><a href="#">More</a></span></h2>
+
+		     	<div class="album-recent-played-song-container">
+					<div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\popular-album1.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>                         
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\popular-album2.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\popular-album3.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\popular-album4.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\popular-album5.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\popular-album6.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\popular-album7.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+
+                    <div class="album-image-container">
+                      <img src="G:\sublime\Major Project 1\asset\popular-album8.jpeg" alt="Avatar" class="album-image">
+                        <div class="overlay">
+                          <a href="#key-note1" class="album-icon" title="User Profile">
+                            <i class="fa-solid fa-play"></i>
+                          </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="popular-album-name-list">
+                	<div class="album-container"><p class="album1-title">Harry's House</p></div>
+                	<div class="album-container"><p class="album2-title">Jugjugg Jeeyo</p></div>
+                	<div class="album-container"><p class="album3-title">Half Girlfriend</p></div>
+                	<div class="album-container"><p class="album4-title">30</p></div>
+                	<div class="album-container"><p class="album5-title">Jersey</p></div>
+                	<div class="album-container"><p class="album6-title">Planet Her</p></div>
+                	<div class="album-container"><p class="album7-title">Atrangi Re</p></div>
+                	<div class="album-container"><p class="album8-title">Kabir Singh</p></div>
+                
+                </div>
+		</section>
+	</main>
+</body>
+</html>

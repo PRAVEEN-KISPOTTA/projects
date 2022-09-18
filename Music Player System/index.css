@@ -1,0 +1,985 @@
+body{
+	background-color: #0c0f12;
+	color: white;
+}
+
+/*-----------------------------HEADER SECTION-------------------------*/
+li{
+	list-style: none;
+	display: inline-block;
+}
+
+.music-player-icon-tag img{
+	height: 70px;
+	width: 70px;
+}
+
+h5{
+	margin-top: -4.5px;
+}
+
+.search-tag{
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 30px;
+}
+
+
+
+li.search-tag input{
+	width: 260px;
+	border: 1px solid black;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.header-style{
+	font-weight: bold;
+}
+
+.home{
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 60%;
+}
+
+.podcast{
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 65%;
+}
+
+.bell-icon-tag{
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 71%;
+}
+.notification{
+	font-size: 45px;
+	margin-left: 74.15%;
+	position: relative;
+	top: -40px;
+	color: red;
+}
+
+.profile-tag{
+	height: 40px;
+	width: 40px;
+	border: 1px solid white;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 7%;
+}
+
+.profile-tag img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+/*------------SlideShow Container-------------*/
+
+
+ .previous-button{
+ 	transform: rotateY(180deg);
+    position: absolute;
+    top: 270px;
+    margin-left: 90px;
+    
+ }
+
+ .next-button{
+ 	position: absolute;
+ 	margin-left: 90%;
+ 	top: 270px;
+ }
+
+
+ #slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 300%;
+	
+	
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+	border-radius: 40px;
+	margin-left: 20px;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -70%;
+	}
+	45% {
+		left: -70%;
+	}
+	50% {
+		left: -140%;
+	}
+	70% {
+		left: -140%;
+	}
+	75% {
+		left: -210%;
+	}
+	95% {
+		left: -210%;
+	}
+	100% {
+		left: -280%;
+    }
+}
+
+/*------------Recently Palayed---------------*/
+
+.recent-played-heading{
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.recent-played-song-container div{
+	height: 220px;
+	width: 220px;
+	border-radius: 40px;
+	border: 1px solid white;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #0000009c;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.more{
+	font-weight: bold;
+	font-size: 15px;
+	margin-left: 34.5%;
+	color: white;
+	text-decoration: none;
+}
+
+.more:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+.fa-ellipsis-vertical{
+	margin-left: 78%;
+	margin-top: 85%;
+	color: white;
+}
+
+.fa-share-button{
+	margin-left: -60%;
+	margin-top: 85%;
+	color: white;
+}
+.circle{
+	height: 10px;
+	width: 10px;
+	border: 1px soild white;
+	border-radius: 50%;
+	background-color: white;
+}
+
+/*----------------------Queue------------------------------*/
+
+.queue-container{
+	height: 600px;
+	width: 265px;
+	/*border: 1px solid white;*/
+	margin-left: 80%;
+	margin-top: -35%;
+}
+
+.queue-heading{
+	margin-top: 0px;
+}
+
+.queue-heading a{
+	margin-left: 62%;
+}
+
+.queue1-container{
+	border: 2px solid transparent;
+	margin-bottom: 12.25px;
+}
+
+b{
+	position: relative;
+	top: -23px;
+}
+
+.queue1 img{
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
+}
+
+.title{
+	margin-left: 100px;
+	margin-top: -45px;
+}
+
+.duration{
+	margin-left: 100px;
+	margin-top: -18px;
+}
+
+
+/*-----------------------Heart-icon------==========------*/
+
+.fa-heart{
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: -40px;
+}
+
+.to-be-changed{
+	color: transparent;
+	margin-top: -63px;
+}
+.to-be{
+	color: white;
+	position: absolute;
+	margin-top: -23px;
+	margin-left: 16.15%;
+}
+
+#checkb {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    background: transparent;  
+    appearance: none;
+    position: relative;
+    left: 93%;
+    top: -44px;
+    z-index: 1;
+}
+
+#checkb:checked {
+    background: transparent;
+}
+
+input[type=checkbox]:checked ~ .to-be-changed {
+	color: red;
+}
+
+input[type=checkbox]:checked ~ .to-be {
+	color: red;
+}
+
+/*-----------------------cube-----------------------------*/
+
+		.cube-container{
+			height: 400px;
+			width: 400px;
+			position: absolute;
+			top: 25%;
+			left: 40%;
+			perspective: 1000px;
+			perspective-origin: top-right;
+			/*border: 2px solid white;*/
+			margin-top: 25%;
+			margin-left: 10%;
+
+		}
+		.cube{
+			height: 200px;
+			width: 200px;
+			display: fle;
+			position: relative;
+			top: 100px;
+			left: 100px;
+			justify-content: center;
+			align-items: center;
+			transform-style: preserve-3d;
+			transform: rotateY(45deg);
+			animation: Rotate 10s linear infinite;
+		}
+
+		@keyframes Rotate{
+			from{
+				transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+			}
+			to{
+				transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			}
+		}
+		.side{
+			height: 200px;
+			width: 200px;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 300%;
+			border: 2px solid white;
+
+		}
+
+		.front{
+			transform: translateZ(100px);
+			 box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+
+			
+		}
+		.back{
+			transform: translateZ(-100px);
+			 
+   /* background-color: #fff;
+  box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    /*0 0 140px 90px #0ff;*/      outer cyan 
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */*/
+
+
+
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+		.top{
+			transform: rotateX(90deg) translateZ(100px);
+
+			box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+		.bottom{
+			transform: rotateX(90deg) translateZ(-100px);
+
+			box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+		.left{
+			transform: rotateY(90deg) translateZ(-100px);
+
+			box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+		.right{
+			transform: rotateY(90deg) translateZ(100px);
+
+			box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+
+
+/*---------------------------Music Status Container--------------------------*/
+
+#key-note1{
+	height: 0px;
+	width: 0%;
+			
+}
+
+#key-note1:target{
+	height: 60px;
+	width: 80%;
+	bottom: 0%;
+	/*border: 2px solid #0c0f12;*/
+	border-radius: 5px;
+	background-color: #21252d;
+	position: fixed;
+	margin-left: 140px;
+			
+}
+
+#key-note2{
+	height: 0px;
+	width: 0%;
+			
+}
+
+#key-note2:target{
+	height: 60px;
+	width: 80%;
+	bottom: 0%;
+	/*border: 2px solid #0c0f12;*/
+	border-radius: 5px;
+	background-color: #21252d;
+	position: fixed;
+	margin-left: 140px;
+			
+}
+
+#key-note3{
+	height: 0px;
+	width: 0%;
+			
+}
+
+#key-note3:target{
+	height: 60px;
+	width: 80%;
+	bottom: 0%;
+	/*border: 2px solid #0c0f12;*/
+	border-radius: 5px;
+	background-color: #21252d;
+	position: fixed;
+	margin-left: 140px;
+			
+}
+
+#key-note4{
+	height: 0px;
+	width: 0%;
+			
+}
+
+#key-note4:target{
+	height: 60px;
+	width: 80%;
+	bottom: 0%;
+	/*border: 2px solid #0c0f12;*/
+	border-radius: 5px;
+	background-color: #21252d;
+	position: fixed;
+	margin-left: 140px;
+			
+}
+
+#key-note5{
+	height: 0px;
+	width: 0%;
+			
+}
+
+#key-note5:target{
+	height: 60px;
+	width: 80%;
+	bottom: 0%;
+	/*border: 2px solid #0c0f12;*/
+	border-radius: 5px;
+	background-color: #21252d;
+	position: fixed;
+	margin-left: 140px;
+			
+}
+
+#key-note6{
+	height: 0px;
+	width: 0%;
+			
+}
+
+#key-note6:target{
+	height: 60px;
+	width: 80%;
+	bottom: 0%;
+	/*border: 2px solid #0c0f12;*/
+	border-radius: 5px;
+	background-color: #21252d;
+	position: fixed;
+	margin-left: 140px;
+			
+}
+
+.music-status img{
+	height: 45px;
+	width: 45px;
+	border-radius: 10px;
+	position: fixed;
+	margin-top: 8px;
+	margin-left: 10px;	
+}
+
+.music-title{
+	margin-left: 60px;
+	margin-top: 12px;
+	position: fixed;
+}
+
+.sub-title{
+	margin-top: 30px;
+	margin-left: 60px;
+	font-size: 14px;
+	color: grey;
+	position: fixed;
+}
+
+.music-shuffle{
+	position: fixed;
+	margin-left: 12%;
+	margin-top: -12px;
+	font-size: 25px;
+}
+
+.music-previous-button{
+	transform: rotate(180deg);
+	margin-left: 18%;
+	margin-top: -12px;
+	font-size: 20px;
+	position: fixed;
+}
+
+.music-next-button{
+	margin-left: 22.45%;
+	margin-top: -9.15px;
+	font-size: 20px;
+	position: fixed;
+}
+
+.music-play-button{
+	margin-left: 19.25%;
+	margin-top: -20px;	
+	position: fixed;
+	color: red;
+}
+
+.music-repeat-button{
+	margin-left: 28%;
+	margin-top: -12px;
+	font-size: 25px;
+	position: fixed;
+}
+
+.music-duration{
+	margin-left: 43.65%;
+	margin-top: -7px;
+	font-size: 14px;
+	font-weight: bold;
+	color: grey;
+	position: fixed;
+}
+
+.music-volume{
+	margin-left: 51%;
+	margin-top: -9px;
+	font-size: 22px;
+	color: red;
+	position: fixed;
+}
+
+.music-queue{
+	margin-left: 55%;
+	margin-top: -11px;
+	font-size: 25px;
+	color: grey;
+	position: fixed;
+}
+
+.music-status-nobe{
+	height: 2px;
+	width: 79.8%;
+	background-color: white;
+	border-radius: 2px;
+	border: 1px solid white;
+	position: fixed;
+}
+
+.percentage-of-complition{
+	height: 4px;
+	width: 30%;
+	margin-top: -1px;
+	margin-left: -1px;
+	background-color: red;
+	border-radius: 2px;
+}
+/*------------------------------Mood Type Music------------------------------*/
+
+.mood-type-music-container{
+	height: 200px;
+	width: 78%;
+	/*border: 2px solid white;*/
+	margin-top: -36px;
+	margin-left: 20px;
+}
+
+.mood-type-music-image img{
+	height: 200px;
+	width: 31%;
+	margin-right: 20px;
+	border-radius: 40px;
+	opacity: 0.7;
+	border: 2px solid white;
+	transition: 0.5s all ease-in-out;
+}
+
+.mood-type-music-image:hover img{
+	opacity: 1.0;
+	transform: scale(1.05);
+}
+
+h3{
+	display: inline-block;
+}
+
+.party{
+	margin-left: 14%;
+	position: relative;
+	top: -130px;
+
+}
+
+.party:hover{
+	
+}
+
+.electronic{
+	margin-left: 28.5%;
+	position: relative;
+	top: -130px;
+}
+
+.road-trip{
+	margin-left: 26%;
+	position: relative;
+	top: -130px;
+}
+
+/*-------------------------New Release----------------------------*/
+
+.new-release-song{
+	position: absolute;
+	height: 200px;
+	width: 90rem;
+	margin-top: 40px;
+	margin-right: 25px;
+	border: 2px solid transparent;
+	z-index:-1;
+}
+
+.more-button a{
+	position: absolute;
+	margin-left: 76rem;
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+.more-button a:hover{
+	text-decoration: underline;
+	color: red;
+}
+
+.new-release-song-heading{
+	color: white;
+	margin-top: 0px;
+	margin-left: 20px;
+}
+
+.fa-angle-right{
+	color: white;
+	display: inline-block;
+	margin-left: 98%;
+}
+
+.previous-album{
+	position: absolute;
+	top: 0px;
+	left: 95%;
+	transform: rotate(180deg);
+}
+
+.next-album{
+	position: absolute;
+	top: 1px;
+	left: 95.5%;
+}
+
+/*--------------------Recently Palayed----------------------------*/
+
+.album-recent-played-song-container div{
+	height: 150px;
+	width: 150px;
+	border-radius: 20px;
+	border: 1px solid transparent;
+}
+
+.album-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+
+.album-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #0000009c;
+}
+
+.album-image-container:hover .overlay {
+  opacity: 1;
+}
+
+.album-icon {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-ellipsis-vertical{
+	margin-left: 78%;
+	margin-top: 85%;
+	color: white;
+}
+
+.fa-share-button{
+	margin-left: -60%;
+	margin-top: 85%;
+	color: white;
+}
+.circle{
+	height: 10px;
+	width: 10px;
+	border: 1px soild transparent;
+	border-radius: 50%;
+	background-color: white;
+}
+
+/*------------------------------Name Title-------------------------*/
+
+.name-list{
+	margin-left: 20px;
+	margin-top: -25px;
+}
+.album-container{
+	height: 40px;
+	width: 150px;
+	color: white;
+	font-size: 15px;
+	margin-top: -80px;
+	margin-right: 20px;
+	border: 1px solid transparent;
+	display: inline-block;
+}
+
+.album1-title{
+	margin: 0px;
+}
+
+.album1-sub-title{
+	margin: 0px;
+}
+
+.album2-title{
+	margin: 0px;
+}
+
+.album2-sub-title{
+	margin: 0px;
+}
+
+.album3-title{
+	margin: 0px;
+}
+
+.album3-sub-title{
+	margin: 0px;
+}
+
+.album4-title{
+	margin: 0px;
+}
+
+.album4-sub-title{
+	margin: 0px;
+}
+
+.album5-title{
+	margin: 0px;
+}
+
+.album5-sub-title{
+	margin: 0px;
+}
+
+.album6-title{
+	margin: 0px;
+}
+
+.album6-sub-title{
+	margin: 0px;
+}
+
+.album7-title{
+	margin: 0px;
+}
+
+.album7-sub-title{
+	margin: 0px;
+}
+
+.album8-title{
+	margin: 0px;
+}
+
+.album8-sub-title{
+	margin: 0px;
+}
+
+
+/*----------------------------Popular Artist----------------------------*/
+
+.popular-artist{
+	margin-top: 19%;
+	position: absolute;
+	z-index: -1;
+}
+
+.artist-container div{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin-left: 20px;
+	display: inline-block;
+	border: 1px solid transparent;
+}
+
+.popular-artist-more-button a{
+	position: absolute;
+	margin-left: 74.5rem;
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+.artist-container div img{
+	border-radius: 50%;
+}
+
+.artist-image-container a:hover{
+	opacity: 0.8;
+}
+
+/*--------------------------Popular Album-----------------------*/
+
+.popular-album{
+	margin-top: 38%;
+}
+
+.popular-album-more-button a{
+	position: absolute;
+	margin-left: 74rem;
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+.popular-album-name-list{
+	margin-left: 20px;
+	margin-top: -42px;
+}
