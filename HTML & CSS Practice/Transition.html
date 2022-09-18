@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3D-Transition</title>
+	<style type="text/css">
+		
+		/*#div1{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 30%;
+			left: 30%;
+			background-color: lightgreen;
+			transition: 1s ease-in-out;			
+		}
+		#div1:hover{
+			transform: skewX(45deg) translate(150px);
+		}*/
+		/*-------------------------------*/
+		/*#div1{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 30%;
+			left: 30%;
+			background-color: lightgreen;
+			transition: 1s ease-in-out;	
+
+		}
+		#div1:hover{
+			transform: rotate(360deg);
+			border-radius: 50%;
+		}*/
+
+		/*-------------------------------*/
+
+		/*@keyframes changeShape{
+			0%{
+				border-radius: 12.5%;
+			}
+			12.5%{
+				border-radius: 25%;
+			}
+			25%{
+				border-radius: 37.5%;
+			}
+			37.5%{
+				border-radius: 50%;
+			}
+		}
+		#div1{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 30%;
+			left: 30%;
+			background-color: lightgreen;
+			animation: changeShape 2s ease-in-out 4 alternate;	
+
+		}*/
+
+		/*---------------bounce----------------*/
+
+		@keyframes changeShape{
+			0%{
+				transform: translateY(100%);
+			}
+			25%{
+				transform: translateY(50%);
+			}
+			50%{
+				transform: translateY(25%);
+			}
+			75%{
+				transform: translateY(5%);
+			}
+		}
+		#div1{
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			position: absolute;
+			top: 30%;
+			left: 30%;
+			background-color: lightgreen;
+			animation: changeShape 1s ease-in-out infinite alternate;	
+
+		}
+
+		@keyframes fading{
+			from{
+				color: black;
+				border: 2px solid black;
+			}
+			to{
+				color: white;
+				border: 2px solid transparent;
+				
+			}
+		}
+		p{
+			display: flex;
+			font-weight: bold;
+			justify-content: center;
+			align-items: center;
+			height: 100px;
+			width: 200px;
+			border: 2px solid black;
+			position: absolute;
+			top: 10%;
+			left: 30%;
+			animation: fading 2s ease-in-out infinite alternate;
+
+		}
+		#div2{
+			height: 200px;
+			width: 200px;
+			position: absolute;
+			top: 30%;
+			left: 65%;
+			background-color: lightcoral;
+			animation: rotate- 1s ease-in-out infinite ;	
+
+		}
+
+		@keyframes rotate-{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(720deg);
+				
+			}
+
+/*-------------------------------*/
+		/*#div2{
+			height: 200px;
+			width: 200px;
+			
+			background-color: lightblue;
+			transition: 1s ease-in-out;			
+		}
+		p{
+			height: 200px;
+			width: 200px;
+			position: absolute;
+			top: 28%;
+			left: 27%;
+			color: black;
+		}
+
+		#div2:hover{
+			position: absolute;
+			height: 500px;
+		}*/
+		
+	</style>
+</head>
+<body>
+	<div id ="div1"></div>
+	<div id="div2"></div>
+	<p>Fading-in</p>
+
+</body>
+</html>

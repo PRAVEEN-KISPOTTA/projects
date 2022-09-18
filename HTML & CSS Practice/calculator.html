@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style type="text/css">
+        
+        .container{
+    height: 510px;
+    width: 550px;
+    border: 2px solid black;
+}
+.heading-container{
+    height: 50px;
+    width: 530px;
+    margin-top: 8px;
+    margin-left: 8px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+#display{
+    height: 80px;
+    width: 530px;
+    margin-top: 8px;
+    margin-left: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    border: 2px solid black;
+}
+.small-btn-container{
+    height: 330px;
+    width: 530px;
+    margin-left: 8px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.small-btn-container div{
+    display: inline-block;
+    
+    height: 50px;
+    width: 115.5px;
+    margin-left: 8px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+.button {
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: lightBlue;
+    transition-duration: 2s;
+
+}
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "heading-container">
+            <h1 class = "heading">
+                CALCULATOR
+            </h1>
+        </div>
+        <div id = "display"></div>
+        <div class = "small-btn-container">
+            
+            <div class = "button" data-value = "AC"><span></span>AC</div>
+            <div class = "button" data-value = "+/-"><span>+/-</span></div>
+            <div class = "button" data-value = "%"><span>%</span></div>
+            <div class = "button" data-value = "/"><span>/</span></div>
+            <div class = "button" data-value = "7"><span>7</span></div>
+            <div class = "button" data-value = "8"><span>8</span></div>
+            <div class = "button" data-value = "9"><span>9</span></div>
+            <div class = "button" data-value = "*"><span>*</span></div>
+            <div class = "button" data-value = "4"><span>4</span></div>
+            <div class = "button" data-value = "5"><span>5</span></div>
+            <div class = "button" data-value = "6"><span>6</span></div>
+            <div class = "button" data-value = "-"><span>-</span></div>
+            <div class = "button" data-value = "1"><span>1</span></div>
+            <div class = "button" data-value = "2"><span>2</span></div>
+            <div class = "button" data-value = "3"><span>3</span></div>
+            <div class = "button" data-value = "+"><span>+</span></div>
+            <div class = "button" data-value = "?"><span>?</span></div>
+            <div class = "button" data-value = "0"><span>0</span></div>
+            <div class = "button" data-value = "."><span>.</span></div>
+            <div class = "button" data-value = "="><span>=</span></div>
+   
+        </div>
+        
+    </div>
+
+    <script type="text/javascript">
+        
+        var buttons = document.getElementsByClassName("button");
+var displays = document.getElementById("display");
+
+var operand1 = 0;
+var operator = null;
+var operand2 = null;
+
+for(var i = 0; i<buttons.length; i++){
+    buttons[i].addEventListener('click', function(){
+        var value = this.getAttribute('data-value');
+        
+        if (value == '-'){
+            operator = '-';
+            displays.innerText += value;
+            operand1 = parseFloat(displays.textContent);
+            
+        }else if (value == '='){
+            
+            operand2 = parseFloat(displays.textContent);
+            
+            console.log(eval(operand2 + ' ' + operator + ' ' + operand1));
+        }else if(value == 'AC'){
+            display.textContent = "";
+        }
+
+        else{
+            displays.innerText += value;
+            
+        }
+    })
+    
+}
+
+
+    </script>
+</body>
+</html>

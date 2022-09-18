@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3D-cube</title>
+	<style type="text/css">
+
+		body{
+			background-color: black;
+		}
+		.container{
+			height: 400px;
+			width: 400px;
+			position: absolute;
+			top: 25%;
+			left: 40%;
+			perspective: 1000px;
+			perspective-origin: top-right;
+			border: 2px solid white;
+
+		}
+		.cube{
+			height: 200px;
+			width: 200px;
+			display: fle;
+			position: relative;
+			top: 100px;
+			left: 100px;
+			justify-content: center;
+			align-items: center;
+			transform-style: preserve-3d;
+			transform: rotateY(45deg);
+			animation: Rotate 10s linear infinite;
+		}
+
+		@keyframes Rotate{
+			from{
+				transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+			}
+			to{
+				transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			}
+		}
+		.side{
+			height: 200px;
+			width: 200px;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 300%;
+			border: 2px solid white;
+
+		}
+
+		.front{
+			transform: translateZ(100px);
+			 box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+
+			
+		}
+		.back{
+			transform: translateZ(-100px);
+			 
+   /* background-color: #fff;
+  box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    /*0 0 140px 90px #0ff;*/      outer cyan 
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */*/
+
+
+
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+		.top{
+			transform: rotateX(90deg) translateZ(100px);
+
+			box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+		.bottom{
+			transform: rotateX(90deg) translateZ(-100px);
+
+			box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+		.left{
+			transform: rotateY(90deg) translateZ(-100px);
+
+			box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+		.right{
+			transform: rotateY(90deg) translateZ(100px);
+
+			box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="cube">
+			<div class="side front">&#128517;</div>
+			<div class="side back">&#128516;</div>
+			<div class="side top">&#128515;</div>
+			<div class="side bottom">&#128514;</div>
+			<div class="side left">&#128513;</div>
+			<div class="side right">&#128512;</div>
+		</div>
+	</div>
+
+</body>
+</html>

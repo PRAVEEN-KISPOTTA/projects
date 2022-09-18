@@ -1,0 +1,13 @@
+p{
+	color: orange;
+}
+.colour{
+	color: green;
+}
+.fontStyle{
+	font-family: cursive;
+}
+
+#colour-chng:hover{
+color: green;
+}

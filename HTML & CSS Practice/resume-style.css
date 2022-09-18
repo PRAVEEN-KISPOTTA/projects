@@ -1,0 +1,415 @@
+
+body{
+	margin: 0px;
+	font-family: sans-serif;
+	font-size: 30px;
+
+}
+/*------header------*/
+#body-header{
+	background-image: url(https://images.unsplash.com/photo-1616004667892-d348f7349d39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGNvZGV8ZW58MHx8MHx8&w=1000&q=80);
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.8;
+	background-attachment: fixed;
+	padding-top: 1.2rem;
+
+}
+
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 45px 45px 0px;
+	margin-top: 55px;
+}
+
+.horizontal-list li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: color 0.5s;
+}
+
+.horizontal-list li a:hover{
+	color: orange;
+}
+
+.name{
+    color:white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 3rem;
+}
+
+.social-media{
+	padding-left: 0px;
+	list-style: none;
+	margin: 0px;
+}
+
+.social-media li a img{
+    image-size: 20px;
+    height: 20px
+}
+.social-media li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 1rem;
+    
+}
+.social-icon li{
+	border-radius: 50%;
+
+}
+
+.social-media li a{
+	text-decoration: none;
+}
+
+.social-media li a:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+.social-media li a img:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-media li a img {
+    width: 1rem;
+    padding: 8px;
+}
+
+.profile-photo{
+	height: 15rem;
+	width: 15rem;
+	margin: auto;
+	position: relative;
+}
+
+.profile-photo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	margin-top: -110px;
+	box-shadow: 0px 0px 6px 4px lightgrey;
+}
+
+#introduction{
+	margin: 10rem 10rem;
+	text-align: justify;
+	margin-top: -6rem;
+	font-size: 22px;
+	font-family: sans-serif;
+	color: grey;
+}
+
+section{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 70px;
+	display: flex;
+	flex-direction: column;
+}
+
+section:nth-child(2n){
+	background-color: lightgrey;
+}
+
+section:nth-child(2n + 1){
+	background-color: white;
+}
+
+#skills{
+	color: darkcyan;
+	text-align: center;
+}
+
+#crust1{
+	height: 25px;
+	width: 150px;
+	border-radius: 50px;
+	border: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-items:;
+	margin: 25px;
+}
+#mental1{
+	height: 25px;
+	width: 60%;
+	background-color: green;
+	border-radius: 50px 0px 0px 50px;
+	/*box-shadow: 20px 20px 50px 15px white;*/
+}
+#core1{
+	font-size: 25px;
+	color: white;
+}
+
+#mental2{
+	height: 25px;
+	width: 60%;
+	background-color: blue;
+	border-radius: 50px 0px 0px 50px;
+}
+#core2{
+	font-size: 25px;
+	color: white;
+}
+
+#mental3{
+	height: 25px;
+	width: 60%;
+	background-color: orange;
+	border-radius: 50px 0px 0px 50px;
+}
+#core3{
+	font-size: 25px;
+	color: white;
+}
+
+#mental4{
+	height: 25px;
+	width: 55%;
+	background-color: red;
+	border-radius: 50px 0px 0px 50px;
+}
+#core4{
+	font-size: 25px;
+	color: white;
+}
+
+/*-------------------*/
+
+#crust2{
+	height: 25px;
+	width: 150px;
+	border-radius: 50px;
+	border: 2px solid black;
+	margin: 25px;
+}
+#mental5{
+	height: 25px;
+	width: 70%;
+	background-color: green;
+	border-radius: 50px 0px 0px 50px;
+	box-shadow: 20px 20px 50px 15px white;
+}
+#core5{
+	font-size: 25px;
+	color: white;
+}
+
+#mental6{
+	height: 25px;
+	width: 60%;
+	background-color: blue;
+	border-radius: 50px 0px 0px 50px;
+}
+#core6{
+	font-size: 25px;
+	color: white;
+}
+.multiple-skill{
+	width: 75%;
+	padding: 10px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+/*---------Work Experiences------------*/
+
+h1{
+    text-align: center;
+    color: darkcyan;
+}
+.exp-container{
+    height: 25rem;
+    width: 40rem;
+    margin: 0% 25%;
+    position: relative;
+   
+}
+
+.exp-boxes{
+    position: relative;
+    height: 100px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 0px 20px 0px 30px;
+}
+.exp-boxes:nth-child(2n){
+    left: 57%;
+}
+
+#exp-verticle-line{
+    height: 80%;
+    width: 0%;
+    border: 0.5px dashed black;
+    margin-top: -59%;
+    margin-left: 57%;
+    
+}
+
+#exp-tracker {
+    color: darkcyan;
+    transform: rotate(90deg);
+    margin-top: -20px;
+  position: sticky;
+  top: 25%;
+}
+
+/*-----------education----------*/
+
+h1{
+    text-align: center;
+    color: darkcyan;
+}
+.edu-container{
+    height: 25rem;
+    width: 40rem;
+    margin: 0% 25%;
+    position: relative;
+    
+}
+
+.edu-boxes{
+    position: relative;
+    height: 100px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 0px 20px 0px 30px;
+}
+.edu-boxes:nth-child(2n){
+    left: 57%;
+}
+
+#edu-verticle-line{
+    height: 80%;
+    width: 0%;
+    border: 0.5px dashed black;
+    margin-top: -59%;
+    margin-left: 57%;
+    
+}
+
+#edu-tracker {
+    color: darkcyan;
+    transform: rotate(90deg);
+    margin-top: -20px;
+  position: sticky;
+  top: 25%;
+}
+
+/*----------Portfolio------*/
+
+.portfolio{
+	text-align: center;
+}
+
+/*----------Contact------*/
+
+#container{
+height: 40rem;
+width: 94.5rem;
+border: 2px solid blue;
+background-image: linear-gradient(45deg, lightblue, darkblue);
+}
+
+#contact-heading{
+	text-align: center;
+	color: white;
+}
+
+#contact-container1{
+	margin-left: 50px;
+	height: 350px;
+	width: 45%;
+}
+
+#contact-container1 input{
+	background-color: transparent;
+	color: white;
+	width: 50%;
+	border: 2px solid transparent;
+	
+}
+
+#horizontal-line{
+	width: 80%;
+	border: 2px solid  white;
+	background-color: white;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+#horizontal-line-message{
+	width: 80%;
+	border: 2px solid  white;
+	background-color: white;
+	border-radius: 20px;
+	margin-bottom: 50px;
+}
+
+.button{
+	font-weight: bold;
+	margin-left: 35%;
+	border-radius: 10px 10px 10px 10px;
+	border: 3px solid white;
+	color: white;
+	background-color: transparent;
+}
+
+
+#contact-container2{
+	
+	height: 350px;
+	width: 45%;
+	margin-top: -350px;
+	margin-left: 50%;
+}
+
+#contact-container2 p{
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	margin-top: 0px;
+}
+
+p#address{
+	font-weight: normal;
+	color: whitesmoke;
+}
+
+#address-head{
+	color: white;
+}
+
+#location{
+	color: whitesmoke;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+#mobile{
+	color: whitesmoke;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+#email-bottom{
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.social-media-bottom{
+
+	margin-left: 40%;
+}

@@ -1,0 +1,10 @@
+#logo-img{
+	height: 100vh;
+	width: 100vw;
+	color: white;
+	font-weight: 900;
+	background-image: url("https://cdn.mos.cms.futurecdn.net/EFXSes9UCfsyRVoNeQ2ZTB-1200-80.png");
+	background-repeat: repeat;
+	background-size: contain;
+	background-attachment: fixed;
+}

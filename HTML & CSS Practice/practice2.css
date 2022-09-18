@@ -1,0 +1,40 @@
+#check-box{
+	height: 0px;
+	width: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	border-radius:20px 20px 20px 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+#check-box:target{
+	height: 30%;
+	width: 30%;
+	top: 25%;
+	left: 25%;
+	background-color: cyan;
+}
+#check-box a{
+	margin-left: 95%;
+	border: 2px solid cyan;
+	color: black;
+	text-decoration: none;
+	padding-right: 20px;
+	
+}
+#check-box a:hover{
+	color: white;
+	background-color: red;
+	text-decoration: ;
+}
+p{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15%;
+
+
+}

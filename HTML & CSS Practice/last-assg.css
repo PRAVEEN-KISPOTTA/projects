@@ -1,0 +1,30 @@
+body{
+	margin-left: 60px;
+	margin-right: 20px;
+	font-family: serif;
+}
+
+img{
+	width: 100%;
+}
+
+/*------header------*/
+
+#main-header{
+	margin-top: 60px;
+}
+
+#logo img{
+	max-width: 210px;
+}
+#site-title{
+	margin-bottom: 0;
+}
+
+#site-title a{
+	font-weight: bold;
+	color: black;
+	font-size: 40px;
+    text-decoration: none;
+}
+
