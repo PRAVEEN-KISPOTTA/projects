@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Toggle view</title>
+	<style type="text/css">
+		*{
+			transition-duration: 0.5s;
+		}
+		body{
+			
+		}
+		#toggle-container{
+			height: 50px;
+			width: 150px;
+			margin-top: 5%;
+			cursor: pointer;
+			border-radius: 40px;
+			border: 2px solid black;
+			background-color: white;
+			margin: 50px auto;
+		}
+
+		#toggle-circle{
+			height: 44.5px;
+			margin-top: 1px;
+			margin-left: 0.5px;
+			width: 50px;
+			border-radius: 50%;
+			border: 2px solid black;
+			background-color: black;
+		}
+
+		h1{
+			margin: 100px auto;
+			text-align: center;
+			margin-top: 10%;
+			font-size: 100px;
+		}
+		.textColor{
+			color: white;
+		}
+		.bgColor{
+			background-color: black;
+		}
+	</style>
+
+	<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="toggle-container">
+		<div id="toggle-circle"></div>
+	</div>
+
+	<h1>Toggle Mode in JQuery</h1>
+
+	<script type="text/javascript">
+		var circle = $("#toggle-circle");
+		var toggled = false;
+
+		$("#toggle-container").click(function(){
+			$("h1").toggleClass("textColor");
+			$("body").toggleClass("bgColor");
+
+			if (!toggled){
+				circle.css("margin-left", "94.5px");
+				toggled = true;
+			}else{
+				circle.css("margin-left", "1px");
+				toggled = false
+			}
+		});
+	</script>
+</body>
+</html>
