@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#fetch-random-image{
+    height: 40px;
+    width: 100px;
+}
+#image-container{
+    margin-top: 40px;
+}
